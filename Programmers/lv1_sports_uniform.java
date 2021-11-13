@@ -1,3 +1,5 @@
+// 프로그래머스 lv1_체육복
+
 package Programmers;
 
 public class lv1_sports_uniform {

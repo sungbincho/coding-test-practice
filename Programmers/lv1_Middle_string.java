@@ -1,3 +1,5 @@
+// 프로그래머스 lv1_가운데_글자_가져오기
+
 package Programmers;
 
 public class lv1_Middle_string {
