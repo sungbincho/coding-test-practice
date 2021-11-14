@@ -1,3 +1,5 @@
+// 프로그래머스 lv1_폰켓몬
+
 package Programmers;
 
 import java.util.*;
