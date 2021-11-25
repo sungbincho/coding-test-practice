@@ -61,7 +61,7 @@ class DfsGraph{
         }
     }
 
-    // 그래프 탐색 (재귀호출)
+    // 재귀함수로 그래프 탐색
     public void dfs(int index){
         this.visitArray[index] = true;
         System.out.print(index + " ");
