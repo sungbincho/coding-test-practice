@@ -1,5 +1,3 @@
-// 백준 재귀_10872_팩토리얼
-
 package Baekjoon;
 
 import java.util.Scanner;
