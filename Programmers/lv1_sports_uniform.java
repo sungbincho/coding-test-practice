@@ -22,15 +22,20 @@ class Solution_sports_uniform {
         for (int i : lost)
             uniformCount[i - 1]--;
 
-        for (int i = 0; i < uniformCount.length; i++)
-            if (uniformCount[i] < 0)
-                if (i != uniformCount.length - 1 && uniformCount[i + 1] > 0) {
-                    uniformCount[i]++;
-                    uniformCount[i + 1]--;
-                } else if (i != 0 && uniformCount[i - 1] > 0) {
+        for (int i = 0; i < uniformCount.length; i++) {
+            if (uniformCount[i] < 0) {
+                if (i != 0 && uniformCount[i - 1] > 0) {
                     uniformCount[i]++;
                     uniformCount[i - 1]--;
+                    continue;
                 }
+                else if(i != uniformCount.length-1 && uniformCount[i + 1] > 0){
+                    uniformCount[i]++;
+                    uniformCount[i + 1]--;
+                    continue;
+                }
+            }
+        }
 
         int answer = 0;
 
